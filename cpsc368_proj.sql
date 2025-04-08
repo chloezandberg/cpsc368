@@ -5421,3 +5421,4 @@ INSERT INTO employment (userid, self_employed, employer_benefits, is_tech_compan
 INSERT INTO employment (userid, self_employed, employer_benefits, is_tech_company, employee_total) VALUES (4213, 0.0, 'No', 1, '6-25');
 INSERT INTO employment (userid, self_employed, employer_benefits, is_tech_company, employee_total) VALUES (4217, 0.0, 'No', 1, 'More than 1000');
 INSERT INTO employment (userid, self_employed, employer_benefits, is_tech_company, employee_total) VALUES (4218, 0.0, 'Yes', 1, 'More than 1000');
+COMMIT;

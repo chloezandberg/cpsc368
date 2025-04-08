@@ -1,5 +1,5 @@
 CREATE TABLE users (
-    userID NUMBER PRIMARY KEY,
+    userid NUMBER PRIMARY KEY,
     age NUMBER,
     gender VARCHAR2(10),
     country_name VARCHAR2(30),
@@ -7,7 +7,7 @@ CREATE TABLE users (
 );
 
 CREATE TABLE employment (
-    userID NUMBER PRIMARY KEY REFERENCES users(userID),
+    userid NUMBER PRIMARY KEY REFERENCES users(userid),
     self_employed NUMBER,
     employer_benefits VARCHAR2(50),
     is_tech_company NUMBER,
@@ -15,7 +15,7 @@ CREATE TABLE employment (
 );
 
 CREATE TABLE mental_health (
-    userID NUMBER PRIMARY KEY REFERENCES users(userID),
+    userid NUMBER PRIMARY KEY REFERENCES users(userid),
     family_history VARCHAR2(20),
     sought_treatment NUMBER,
     anonymity_protection VARCHAR2(20),

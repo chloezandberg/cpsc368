@@ -34,7 +34,7 @@ The final report can be found here (link the report)!!!!!
 
 ## Report Query Specifications
 1. After SSHing to the server department, use ``wget https://raw.githubusercontent.com/chloezandberg/cpsc368/main/cpsc368_proj.sql -O cpsc368_proj.sql`` to download our SQL file into the database.
-2. After entering into SQL Plus, run ``@cpsc368_proj.sql`` to commit the tables to the database.
+2. After entering into SQL Plus, run ``@cpsc368_proj.sql`` to commit the tables to the database (note that you only need to do this once; everytime you access the database following this action, the tables will already be committed).
 
 
 

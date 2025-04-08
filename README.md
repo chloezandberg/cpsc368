@@ -33,7 +33,8 @@ The final report can be found here (link the report)!!!!!
   This file is the SQL file we created and exported our cleaned data into through a series of INSERT statements
 
 ## Report Query Specifications
-- After SSHing to the server department, use ``wget https://raw.githubusercontent.com/chloezandberg/cpsc368/main/cpsc368_proj.sql -O cpsc368_proj.sql`` to download our SQL file into the database.
+1. After SSHing to the server department, use ``wget https://raw.githubusercontent.com/chloezandberg/cpsc368/main/cpsc368_proj.sql -O cpsc368_proj.sql`` to download our SQL file into the database.
+2. After entering into SQL Plus, run ``@cpsc368_proj.sql`` to commit the tables to the database.
 
 
 

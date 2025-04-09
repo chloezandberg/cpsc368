@@ -14,7 +14,7 @@ Through qualitative thematic analysis and quantitative measures, we aim to uncov
 
 
 ## Report
-The final report can be found here (link the report)!!!!!
+The final report can be found [here](https://docs.google.com/document/d/1gchvxl2wJo4w8LNdewH5KYQuhAWkNQO1HHuoyoXQ1F8/edit?usp=sharing).
 
 
 ## Required Libraries
@@ -25,14 +25,24 @@ The final report can be found here (link the report)!!!!!
 
 
 ## Project File Descriptions
-- cleaning-EDA.ipynb:
-  This file is where Chloe and I performed some basic cleaning and conducted some exploratory data analysis to better understand the data we were working with in context of our research questions. We also created and inserted data into our SQL file in preparation for our analysis.
-- cpsc368_proj.sql:
-  This file contains the mental health data that we used for our project from an SQLite database
-- cpsc368_proj.sql:
-  This file is the SQL file we created and exported our cleaned data into through a series of INSERT statements
+- ``cleaning-EDA/cleaning-EDA.ipynb``:
+  This file is where we performed some basic cleaning and conducted some exploratory data analysis to better understand the data we were working with in context of our research questions. We also created and inserted data into our SQL file in preparation for our analysis.
+- ``cleaning-EDA/mental_health.sqlite``:
+  This file contains the mental health data that we used for our project from an SQLite database.
+- ``database/cpsc368_proj.sql``:
+  This file is the SQL file we created and exported our cleaned data into through a series of INSERT statements.
+- ``analysis/chloe-implementation.ipynb``
+  This file contains the work that Chloe did to establish a SQL connection, write a query to the database, and create a visualization in Altair.
+- ``analysis/oli-implementation.ipynb``
+This file contains the work that Olivia did to establish a SQL connection, write a query to the database, and create a visualization in Altair.
+- ``database/my_database.db``
+This is the database object we created to establish a SQLite connection.
 
 ## Report Query Specifications
+- Chloe's SQL query is in ``analysis/chloe-implementation.ipynb`` at Cell 2, Lines 5-8.
+- Olivia's SQL query in is ``analysis/oli-implementation.ipynb`` at Cell 1, Lines 8-10.
+
+## Instructions to load our SQL file into the UBC CS Department server
 1. After SSHing to the server department, use ``wget https://raw.githubusercontent.com/chloezandberg/cpsc368/main/cpsc368_proj.sql -O cpsc368_proj.sql`` to download our SQL file into the database.
 2. After entering into SQL Plus, run ``@cpsc368_proj.sql`` to commit the tables to the database (note that you only need to do this once; everytime you access the database following this action, the tables will already be committed).
 
